@@ -88,4 +88,14 @@ docker-compose up -d
 docker-compose down 
 ```
 
+## Add new document with index
+```
+curl --location --request GET 'http://localhost:4000/add-document?index=game&character=haong&quote=hoang'
+```
+
+## Search
+```
+curl --location --request GET 'http://localhost:4000/search?index=game&character=meni&quote=hoang'
+```
+
 
